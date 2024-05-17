@@ -13,9 +13,10 @@ import java.util.List;
 public class CarController {
 
     private CarServiceImpl carService;
-public CarController(CarServiceImpl carService) {
-    this.carService = carService;
-}
+
+    public CarController(CarServiceImpl carService) {
+        this.carService = carService;
+    }
 
     @GetMapping(value = "/cars")
     public String printCar(@RequestParam(required = false) Integer count, ModelMap modelCar) {

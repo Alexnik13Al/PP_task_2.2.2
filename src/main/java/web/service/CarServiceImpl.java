@@ -19,9 +19,8 @@ public class CarServiceImpl implements CarService {
         carList.add(new Car("Mersedes-Benz", 2020, "green"));
         carList.add(new Car("Haval", 2023, "white"));
     }
-
-    @Override
-    public List<Car> getCar(int numberOfCars) {
+    
+    private List<Car> getCar(int numberOfCars) {
         return carList.subList(0, numberOfCars);
     }
 
